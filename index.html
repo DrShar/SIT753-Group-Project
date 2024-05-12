@@ -9,6 +9,33 @@
 </div> 
 <body>
     <h1>SIT223-SIT753 - Professional Practice in IT</h1>
+
+    <!-- Adding the Team Leader tasks of including the unit content and the Enrolment and Fee Information 
+        (I have changed the code mentioned in the OnTrack task sheet and have included my personal style such as dedicated customised button, separate heading, javascript, and several other changes.)-->    
+    <h2> Content</h2> 
+    <p>
+        To be successful IT graduates need to understand the use of industry tools and practices,
+        the ways these tools work and connect together, and the underlying professional, ethical,
+        and teamwork knowledge and skills needed to put these into practice in a professional manner.
+    </p>
+     <!-- Here I have included the enrolment and fee details from the official Deakin site and have formatted to a desired look-->
+    <h2> Enrolment and Fee Information </h2> 
+    <p>
+        Fees and charges vary depending on the type of fee place you hold, your course, your commencement year, the units you choose to study and their study discipline, and your study load.
+        &nbsp;
+        Tuition fees increase at the beginning of each calendar year and all fees quoted are in Australian dollars ($AUD). 
+        &nbsp;
+        Tuition fees do not include textbooks, computer equipment or software, other equipment or costs such as mandatory checks, travel and stationery.
+        <br/><br/>
+        For further information regarding tuition fees, other fees and charges, invoice due dates, withdrawal dates, payment methods, etc., click on the button below! 
+    </p>
+     <!-- I have created a custom button with my personal choice of animation and colour and have included the onclick attribute 
+        with the relavant javascript function in script.js and have redirected the button to open the Enrolment and Fee link of the official Deakin website--> 
+
+    <button class="custom_button style" onclick="redirectTo('https://www.deakin.edu.au/students/enrolment-and-fees/fees')">Current Students</button>
+    <br/><br/><br/> 
+    
+
     <h2> Unit details</h2>
     <table style="width:100%">
         <tr>
@@ -32,5 +59,11 @@
             <td> 1 x 3 hour active class per week, weekly drop in support.</td>
         </tr>   
     </table>
+
+
+<!-- Javascript Tag -->
+
+<script src="script.js"></script> 
+
 </body>
 </html>

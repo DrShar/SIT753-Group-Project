@@ -15,10 +15,12 @@ p {
   font-size: 14px;
   font-family: Arial
 }
-div { 
-  background-color: darkcyan; 
-  text-align: right; 
-} 
+
+div {
+ background-color: #25aae1; /* Changed the colour to match my preference and to match the colours I used for the button below to maintain a uniform brand style*/
+ text-align: right; 
+}  
+
 th, td {
   padding: 8px;
   text-align: left;
@@ -28,3 +30,41 @@ th, td {
  tr:nth-child(odd) {background-color: #f2f2f2;}
 
 
+
+
+ /*  Custom Button I have used with my personal choice of colour, transition hover animations, etc. */ 
+ /* Dimensions */
+ .custom_button {
+  width: 180px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+}
+/* Hover */
+.custom_button:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+/* Focus */
+.custom_button:focus {
+  outline: none;
+}
+/* Style */
+.custom_button.style {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #1e8fc3,
+    #0b5884,
+    #104e7d
+  );
+  box-shadow: 0 4px 15px 0 rgba(3, 29, 42, 0.75);
+}
