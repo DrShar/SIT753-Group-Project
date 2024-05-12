@@ -11,78 +11,112 @@
     
     <h1>SIT223-SIT753 - Professional Practice in IT</h1>
     
-    
-    <!-- Incorporating my User Story and Feature I identified during Sprint 1 into the website and adding the language customisation functionality for the user-->
-    <!-- Adding Language Support features and giving the user the option to choose desired language with the help of Google Translate API element--> 
-    <!--Language Support-->
+    <!-- Incorporating my User Stories and Features I identified during Sprint 1, 
+        I am adding: Accessibility Options (Font Size Customization) 
+        and Language Support (Choose Language) functionality for the users-->
+
+    <!-- Creating a border to highlight and prompt the user to select their desired preference for Accessibility Options and Language -->    
     <div class="div2" style="padding: 20px; margin: 50px; font-size: 20px; border: 5px solid #25aae1;">
-    <h1 style="color: #25aae1">Choose Language</h1> 
-    <div id="google_translate_element"> </div> <!--google translate element function is defined in Javascript file-->
+       
+       <!-- Creating a column to add the Accessibility Options beside the Language Support function rather than below it-->
+        <div class = "column-section"> 
+            <!-- First Column -->
+            <div class ="column">
+                <!-- Accessibility Options-->
+                <h1 style="color: #25aae1">Accessibility Options</h1>
+                <!-- Adding the Accessibility Option #1 Font Size Customisation, to enable users who may require visual aid such as a larger font size for better readability-->
+                <h3 style="color:#25aae1">Font Size</h3> 
+                <button type="button" class="custom_button style" name="btn1" 
+                onclick="changeSizeByBtn('15px')">Small</button> <!-- Setting the Font Size to 15px when 'Small' button is clicked-->
+                <button type="button" class="custom_button style" name="btn2"
+                onclick="changeSizeByBtn('20px')">Normal</button><!-- Setting the Font Size to 20px when 'Normal' button is clicked-->
+                <button type="button" class="custom_button style" name="btn3"
+                onclick="changeSizeByBtn('35px')">Large</button> <!-- Setting the Font Size to 35px when 'Large' button is clicked-->
+                <br /><br /> 
+                <!-- Creating a custom font size slider to enable users to select desired font size through continuous dynamic font change rather than the above discrete changes through buttons-->
+                <span style="font-style: italic; font-size:25px; color:#25aae1" >Custom Size Slider</span> 
+                <input type="range" min="20" max="75" id="slider" value="20"
+                onchange="changeSizeBySlider()">
+            </div>
+
+            <!-- Second Column -->
+            <div class ="column">
+                <!-- Incorporating my User Story and Feature I identified during Sprint 1 into the website and adding the language customisation functionality for the user-->
+                <!-- Adding Language Support features and giving the user option to choose desired language with the help of Google Translate API element--> 
+                <!-- Note: To test this, please run the code through live server and not just by opening the static html through terminal-->
+                <!--Language Support-->
+                
+                <h1 style="color: #25aae1">Language Support</h1> 
+                <h3 style="color:#25aae1">Choose Language</h3>  
+                <div id="google_translate_element"> </div> <!--google translate element function is defined in Javascript file-->
+            </div>
+        </div> 
+    </div>   
+    
+
+
+    <div style="padding: 20px; margin: 50px; font-size: 20px;" id="container" class="container"> 
+        <!-- Adding the Team Leader tasks of including the unit content and the Enrolment and Fee Information 
+            (I have changed the code mentioned in the OnTrack task sheet and have included my personal style such as dedicated customised button, separate heading, javascript, and several other changes.)--> 
+        
+           <!--SIT753 Content Description and Objectives-->   
+           <h2>Content</h2>
+            
+                To be successful IT graduates need to understand the use of industry tools and practices,
+                the ways these tools work and connect together, and the underlying professional, ethical,
+                and teamwork knowledge and skills needed to put these into practice in a professional manner.
+            
+            
+            <!-- Adding Hurdle Requirement and pushing this as a new branch -->
+            <!--Hurdle Requirement-->
+            <h2> Hurdle Requirement</h2> 
+           
+                To be eligible to obtain a pass in this unit, students must meet certain milestones as part of the portfolio.
+           
+            
+            <!-- Here I have included the enrolment and fee details from the official Deakin site and have formatted to a desired look-->
+            <!--SIT753 Content Description and Objectives-->   
+            <h2> Enrolment and Fee Information </h2> 
+          
+                Fees and charges vary depending on the type of fee place you hold, your course, your commencement year, the units you choose to study and their study discipline, and your study load.
+                &nbsp;
+                Tuition fees increase at the beginning of each calendar year and all fees quoted are in Australian dollars ($AUD). 
+                &nbsp;
+                Tuition fees do not include textbooks, computer equipment or software, other equipment or costs such as mandatory checks, travel and stationery.
+                <br/><br/>
+                For further information regarding tuition fees, other fees and charges, invoice due dates, withdrawal dates, payment methods, etc., click on the button below! 
+                <br/><br/>
+            <!-- I have created a custom button with my personal choice of animation and colour and have included the onclick attribute 
+                with the relavant javascript function in script.js and have redirected the button to open the Enrolment and Fee link of the official Deakin website--> 
+            <!--Custom 'Current Students' Button--> 
+            <button class="custom_button style" onclick="redirectTo('https://www.deakin.edu.au/students/enrolment-and-fees/fees')">Current Students</button>
+            <br/><br/><br/> 
+        
+            <h2> Unit details</h2>
+            <table style="width:100%">
+                <tr>
+                    <td>Year: </td>
+                    <td>2023 unit information</td>
+                </tr>
+                <tr>
+                    <td>Enrolment modes:</td>
+                    <td>Trimester 1: Burwood (Melbourne), Geelong, Cloud (online)</td>
+                </tr>
+                    <tr>
+                    <td>Credit point(s):</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td> Unit Chair:</td>
+                    <td> Trimester 1: Azadeh Ghari Neiat</td>
+                </tr>
+                <tr>
+                    <td> Scheduled Learning Activities:</td>
+                    <td> 1 x 3 hour active class per week, weekly drop in support.</td>
+                </tr>   
+            </table>
+        
     </div>
-    
-
-    <!-- Adding the Team Leader tasks of including the unit content and the Enrolment and Fee Information 
-        (I have changed the code mentioned in the OnTrack task sheet and have included my personal style such as dedicated customised button, separate heading, javascript, and several other changes.)--> 
-   
-    <!--SIT753 Content Description and Objectives-->   
-    <h2> Content</h2> 
-    <p>
-        To be successful IT graduates need to understand the use of industry tools and practices,
-        the ways these tools work and connect together, and the underlying professional, ethical,
-        and teamwork knowledge and skills needed to put these into practice in a professional manner.
-    </p>
-    
-    <!-- Adding Hurdle Requirement and pushing this as a new branch -->
-    <!--Hurdle Requirement-->
-    <h2> Hurdle Requirement</h2> 
-    <p>
-        To be eligible to obtain a pass in this unit, students must meet certain milestones as part of the portfolio.
-    </p>
-    
-    <!-- Here I have included the enrolment and fee details from the official Deakin site and have formatted to a desired look-->
-    <!--SIT753 Content Description and Objectives-->   
-    <h2> Enrolment and Fee Information </h2> 
-    <p>
-        Fees and charges vary depending on the type of fee place you hold, your course, your commencement year, the units you choose to study and their study discipline, and your study load.
-        &nbsp;
-        Tuition fees increase at the beginning of each calendar year and all fees quoted are in Australian dollars ($AUD). 
-        &nbsp;
-        Tuition fees do not include textbooks, computer equipment or software, other equipment or costs such as mandatory checks, travel and stationery.
-        <br/><br/>
-        For further information regarding tuition fees, other fees and charges, invoice due dates, withdrawal dates, payment methods, etc., click on the button below! 
-    </p>
-    <!-- I have created a custom button with my personal choice of animation and colour and have included the onclick attribute 
-        with the relavant javascript function in script.js and have redirected the button to open the Enrolment and Fee link of the official Deakin website--> 
-    <!--Custom 'Current Students' Button--> 
-    <button class="custom_button style" onclick="redirectTo('https://www.deakin.edu.au/students/enrolment-and-fees/fees')">Current Students</button>
-    <br/><br/><br/> 
-    
-
-    <h2> Unit details</h2>
-    <table style="width:100%">
-        <tr>
-            <td>Year: </td>
-            <td>2023 unit information</td>
-        </tr>
-        <tr>
-            <td>Enrolment modes:</td>
-            <td>Trimester 1: Burwood (Melbourne), Geelong, Cloud (online)</td>
-        </tr>
-            <tr>
-            <td>Credit point(s):</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td> Unit Chair:</td>
-            <td> Trimester 1: Azadeh Ghari Neiat</td>
-        </tr>
-        <tr>
-            <td> Scheduled Learning Activities:</td>
-            <td> 1 x 3 hour active class per week, weekly drop in support.</td>
-        </tr>   
-    </table>
-
-
 <!-- Javascript Tag -->
 
 <script src="script.js"></script> 

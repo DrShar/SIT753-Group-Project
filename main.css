@@ -73,3 +73,17 @@ th, td {
 .div2{  
   text-align: center; 
 } 
+
+
+/* Creating column-section and column to add Accessibility Options and Language Support for users side by side */ 
+
+.column-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Optional spacing between columns */
+}
+
+.column {
+  padding: 10px;
+  text-align: center;
+}

@@ -12,3 +12,19 @@ function redirectTo(url) {
  function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
     }
+
+
+//Creating Accessibility Option #1 : Font Size Customisation 
+//Discrete Font Size Customisation option for the users through Button
+    let cont = document.getElementById("container");
+function changeSizeByBtn(size) {
+    // Set value of the parameter as fontSize
+    cont.style.fontSize = size;
+}
+
+//Continuous Dynamic Font Size Customisation option for users through Slider 
+function changeSizeBySlider() {
+    let slider = document.getElementById("slider");
+    // Set slider value as fontSize
+    cont.style.fontSize = slider.value + "px";
+}
