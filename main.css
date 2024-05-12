@@ -16,11 +16,6 @@ p {
   font-family: Arial
 }
 
-div {
- background-color: #25aae1; /* Changed the colour to match my preference and to match the colours I used for the button below to maintain a uniform brand style*/
- text-align: right; 
-}  
-
 th, td {
   padding: 8px;
   text-align: left;
@@ -30,6 +25,11 @@ th, td {
  tr:nth-child(odd) {background-color: #f2f2f2;}
 
 
+
+ .div1{ /* Changed to specify div1 to differentiate between header style and div2 style I've defined for Choose Language function*/
+  background-color: #25aae1; /* Changed the colour to match my preference and to match the colours I used for the button below to maintain a uniform brand style*/
+  text-align: right; 
+ }  
 
 
  /*  Custom Button I have used with my personal choice of colour, transition hover animations, etc. */ 
@@ -68,3 +68,8 @@ th, td {
   );
   box-shadow: 0 4px 15px 0 rgba(3, 29, 42, 0.75);
 }
+
+/* For Choose Language call to action for user: div2 style defined to force align text to centre*/
+.div2{  
+  text-align: center; 
+} 

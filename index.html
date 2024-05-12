@@ -4,11 +4,22 @@
     <title> Home </title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 </head>
-<div > 
+<div class="div1">
     <img src="logo.svg" alt="Deakin" width="200" height="210" > 
 </div> 
 <body>
+    
     <h1>SIT223-SIT753 - Professional Practice in IT</h1>
+    
+    
+    <!-- Incorporating my User Story and Feature I identified during Sprint 1 into the website and adding the language customisation functionality for the user-->
+    <!-- Adding Language Support features and giving the user the option to choose desired language with the help of Google Translate API element--> 
+    <!--Language Support-->
+    <div class="div2" style="padding: 20px; margin: 50px; font-size: 20px; border: 5px solid #25aae1;">
+    <h1 style="color: #25aae1">Choose Language</h1> 
+    <div id="google_translate_element"> </div> <!--google translate element function is defined in Javascript file-->
+    </div>
+    
 
     <!-- Adding the Team Leader tasks of including the unit content and the Enrolment and Fee Information 
         (I have changed the code mentioned in the OnTrack task sheet and have included my personal style such as dedicated customised button, separate heading, javascript, and several other changes.)--> 
@@ -75,6 +86,7 @@
 <!-- Javascript Tag -->
 
 <script src="script.js"></script> 
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!--Google Translate Javascript for the Choose Language function-->
 
 </body>
 </html>

@@ -6,3 +6,9 @@
 function redirectTo(url) {
  window.open(url, '_blank')}; // used _blank so that the Enrolment and Fees url opens in a new tab, while leaving the main tab of the SIT753 Unit Site as is 
 
+
+ //Choose Language feature for user powered by Google Translate API and translate element here
+ //Note: To test this, please run the code through live server and not just by opening the static html through terminal
+ function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
