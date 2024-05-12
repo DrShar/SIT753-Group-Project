@@ -1,7 +1,7 @@
 //
 // This is the Javascript file I have included to enable various functions of my code such as Button Toggles, Link Redirections, etc. 
 // Additionally I have included the functions required for correct implementation of my user stories and features I have identified in Sprint 1  
-// These include Accessibility Options like Colour-Blind Mode and Font Size Customisation as well as Language Support to Choose Language 
+// These include Accessibility Options like High-Contrast Mode, Colour-Blind Mode, and Font Size Customisation as well as Language Support to Choose Language 
 // ~ Sharath Vijayananda 
 // 
 
@@ -41,3 +41,13 @@ toggleButtonColourBlind.addEventListener("click", function() {
     document.body.classList.toggle("protanopia");
   });
   
+//Creating Accessibility Option #3: High-Contrast Mode 
+// Providing users with visual impairments the option to view the unit site in a more accessible manner 
+// Note: To test this feature, please run the code through live server and not just by opening the static html through terminal 
+
+  var toggleButtonHighContrast = document.getElementById("toggle-high-contrast");
+
+  toggleButtonHighContrast.addEventListener("click", function() {
+    document.body.classList.toggle("high-contrast");
+  });
+

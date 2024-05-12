@@ -21,7 +21,7 @@ th, td {
   border-bottom: 1px solid #ddd;
   font-family: Arial
  }
- tr:nth-child(odd) {background-color: #f2f2f2;}
+ tr:nth-child(odd){color:#000; background-color: #f2f2f2;} /* Added explicit text colour black to help support my Accessibility Option #3 High-Contrast Mode */ 
 
 
 
@@ -125,7 +125,15 @@ th, td {
   box-shadow: 0 4px 15px 0 rgba(3, 29, 42, 0.75);
 }
 
-/* Created Colour-Blind Mode Style for Protanooia i.e., Red-Green Colour-Blindness */ 
+/* Created Colour-Blind Mode Style for users with Protanooia i.e., Red-Green Colour-Blindness for Accessibility Option #2 */ 
 .protanopia {
   filter: url('filters.svg#protanopia');
+}
+
+
+/* Created High-Contrast Mode Style for Accessibility Option #3 
+to help users with visual imapairments to view the unit site in a more accessible manner */
+.high-contrast {
+  color: #fff;
+  background-color: #000;
 }
