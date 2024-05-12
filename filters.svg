@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Created a SVG file with filters to help support the 
+Accessibility Option Colour-Blind Mode functionality I identified as one of my user stories and features for Sprint 1
+to help users view the unit site in a more accessible manner. 
+This filter particularly supports the protanopia i.e., Red-Green Colour-Blindness 
+~ Sharath Vijayananda -->
+
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1">
+  <defs>
+        <filter id="protanopia">
+            <feColorMatrix
+                in="SourceGraphic"
+                type="matrix"
+                values="0.567, 0.433, 0,     0, 0
+                        0.558, 0.442, 0,     0, 0
+                        0,     0.242, 0.758, 0, 0
+                        0,     0,     0,     1, 0"/>
+        </filter> <!-- filter to help transform the colours in protanopia i.e., Red-Green Colour-Blindness mode --> 
+  </defs>
+</svg> 

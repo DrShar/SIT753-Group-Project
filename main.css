@@ -1,5 +1,4 @@
 
-
 h1 {
   font-size: 40px;
   font-family: Arial
@@ -86,4 +85,47 @@ th, td {
 .column {
   padding: 10px;
   text-align: center;
+}
+
+
+/*  Custom Button (Large) I have used with my personal choice of colour, transition hover animations, etc. */ 
+ /* Dimensions */
+ .custom_button_large {
+  width: 300px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+}
+/* Hover */
+.custom_button_large:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+/* Focus */
+.custom_button_large:focus {
+  outline: none;
+}
+/* Style */
+.custom_button_large.style {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #1e8fc3,
+    #0b5884,
+    #104e7d
+  );
+  box-shadow: 0 4px 15px 0 rgba(3, 29, 42, 0.75);
+}
+
+/* Created Colour-Blind Mode Style for Protanooia i.e., Red-Green Colour-Blindness */ 
+.protanopia {
+  filter: url('filters.svg#protanopia');
 }

@@ -1,5 +1,8 @@
 //
-// This is the Javascript file I have included to enable various functions of my code such as Button Toggles, Link Redirections, etc. ~ Sharath Vijayananda 
+// This is the Javascript file I have included to enable various functions of my code such as Button Toggles, Link Redirections, etc. 
+// Additionally I have included the functions required for correct implementation of my user stories and features I have identified in Sprint 1  
+// These include Accessibility Options like Colour-Blind Mode and Font Size Customisation as well as Language Support to Choose Language 
+// ~ Sharath Vijayananda 
 // 
 
 // The below function is for the 'Current Students' button to redirect to the relevant Enrolment and Fees url I have included in the html file 
@@ -28,3 +31,13 @@ function changeSizeBySlider() {
     // Set slider value as fontSize
     cont.style.fontSize = slider.value + "px";
 }
+
+//Creating Accessibility Option #2: Colour-Blind Mode   
+// Provinding users with protanopia i.e., Red-Green Colour-Blindness the option to view the unit site in a more accessible manner 
+// Note: To test this feature, please run the code through live server and not just by opening the static html through terminal 
+var toggleButtonColourBlind = document.getElementById("toggle-colour-blind");
+
+toggleButtonColourBlind.addEventListener("click", function() {
+    document.body.classList.toggle("protanopia");
+  });
+  
